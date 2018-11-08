@@ -1,0 +1,11 @@
+# Ignore tmp-päätteet
+*.tmp
+
+# Ignore build - kansio
+
+build/
+
+#Gradlee
+.gradle/
+.nb-gradle
+gradle.properties
