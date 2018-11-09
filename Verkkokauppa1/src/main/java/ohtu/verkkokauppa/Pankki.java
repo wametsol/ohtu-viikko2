@@ -2,8 +2,8 @@ package ohtu.verkkokauppa;
 
 public class Pankki implements PankkiIO {
 
-    private static Pankki instanssi;
-
+    public static Pankki instanssi;
+    /*
     public static Pankki getInstance() {
         if (instanssi == null) {
             instanssi = new Pankki();
@@ -11,10 +11,11 @@ public class Pankki implements PankkiIO {
 
         return instanssi;
     }
+    */
     private Kirjanpito kirjanpito;
 
-    public Pankki() {
-        kirjanpito = Kirjanpito.getInstance();
+    public Pankki(Kirjanpito kp) {
+        kirjanpito = kp;
     }
 
     @Override

@@ -4,8 +4,9 @@ import java.util.*;
 
 public class Varasto implements VarastoIO {
 
-    private static Varasto instanssi;
-
+    public static Varasto instanssi;
+    
+    /*
     public static Varasto getInstance() {
         if (instanssi == null) {
             instanssi = new Varasto();
@@ -13,12 +14,13 @@ public class Varasto implements VarastoIO {
 
         return instanssi;
     }
+*/
     
     private Kirjanpito kirjanpito;
     private HashMap<Tuote, Integer> saldot;  
     
-    private Varasto() {
-        kirjanpito = Kirjanpito.getInstance();
+    public Varasto(Kirjanpito kp) {
+        kirjanpito = kp;
         saldot = new HashMap<Tuote, Integer>();
         alustaTuotteet();
     }
