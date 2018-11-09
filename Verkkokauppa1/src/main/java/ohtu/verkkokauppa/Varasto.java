@@ -24,6 +24,9 @@ public class Varasto implements VarastoIO {
         saldot = new HashMap<Tuote, Integer>();
         alustaTuotteet();
     }
+    public Varasto(){
+        
+    }
             
     @Override
     public Tuote haeTuote(int id){

@@ -19,6 +19,7 @@ public class Viitegeneraattori implements ViitegeneraattoriIO {
         seuraava = 1;    
     }
     
+    
     @Override
     public int uusi(){
         return seuraava++;
