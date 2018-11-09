@@ -11,6 +11,7 @@
 
     
     
+   <!--
     <bean id="varastoIo" class="ohtu.verkkokauppa.Varasto">
         <constructor-arg ref="kirjanpitoIo" />
     </bean>
@@ -29,7 +30,7 @@
       <constructor-arg ref="viitegeneraattoriIo" />  
     </bean>
     
-    
+    -->
     <context:annotation-config />
     <context:component-scan base-package="ohtu.verkkokauppa" />
 

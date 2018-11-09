@@ -1,5 +1,7 @@
 package ohtu.verkkokauppa;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Viitegeneraattori implements ViitegeneraattoriIO {
 
     public static Viitegeneraattori instanssi;
